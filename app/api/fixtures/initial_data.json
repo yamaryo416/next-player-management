@@ -1,0 +1,179 @@
+[
+  {
+    "model": "api.CustomUser",
+    "pk": 1,
+    "fields": {
+      "email": "test1@example.com",
+      "password": "password"
+    }
+  },
+  {
+    "model": "api.CustomUser",
+    "pk": 2,
+    "fields": {
+      "email": "test2@example.com",
+      "password": "password"
+    }
+  },
+  {
+    "model": "api.CustomUser",
+    "pk": 3,
+    "fields": {
+      "email": "test3@example.com",
+      "password": "password"
+    }
+  },
+  {
+    "model": "api.Team",
+    "pk": 1,
+    "fields": {
+      "name": "test1チーム",
+      "is_limit_join": false,
+      "password": "0000"
+    }
+  },
+  {
+    "model": "api.Profile",
+    "pk": 1,
+    "fields": {
+      "nickname": "test1",
+      "user": 1,
+      "is_coach": true,
+      "team": 1,
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "join_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+   {
+    "model": "api.Profile",
+    "pk": 2,
+    "fields": {
+      "nickname": "test2",
+      "user": 2,
+      "is_coach": false,
+      "team": 1,
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "join_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Profile",
+    "pk": 3,
+    "fields": {
+      "nickname": "test3",
+      "user": 3,
+      "is_coach": false,
+      "team": 1,
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "join_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.TeamBoard",
+    "pk": 1,
+    "fields": {
+      "introduction": "",
+      "team": 1,
+      "join_count": 3,
+      "coach": 1
+    }
+  },
+  {
+    "model": "api.Training",
+    "pk": 1,
+    "fields": {
+      "title": "ランニング",
+      "load": 10,
+      "count": 10,
+      "distance": 5,
+      "description": "いっぱい走る",
+      "icon_number": 1,
+      "team": 1,
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Training",
+    "pk": 2,
+    "fields": {
+      "title": "スクワット",
+      "load": 40,
+      "count": 20,
+      "distance": 0,
+      "description": "",
+      "icon_number": 1,
+      "team": 1,
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+   {
+    "model": "api.Training",
+    "pk": 3,
+    "fields": {
+      "title": "腹筋",
+      "load": 0,
+      "count": 30,
+      "distance": 0,
+      "description": "",
+      "icon_number": 1,
+      "team": 1,
+      "is_general": false,
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Training",
+    "pk": 4,
+    "fields": {
+      "title": "懸垂",
+      "load": 0,
+      "count": 30,
+      "distance": 0,
+      "description": "",
+      "icon_number": 1,
+      "team": 1,
+      "is_general": false,
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Schedule",
+    "pk": 1,
+    "fields": {
+      "training": 1,
+      "team": 1,
+      "date": "2021-05-01",
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+   {
+    "model": "api.Schedule",
+    "pk": 2,
+    "fields": {
+      "training": 1,
+      "team": 1,
+      "date": "2021-05-02",
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Schedule",
+    "pk": 3,
+    "fields": {
+      "training": 1,
+      "team": 1,
+      "date": "2021-05-04",
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  },
+  {
+    "model": "api.Schedule",
+    "pk": 4,
+    "fields": {
+      "training": 1,
+      "team": 1,
+      "date": "2021-05-05",
+      "created_at": "2021-01-01T00:00:00.000Z"
+    }
+  }
+]
